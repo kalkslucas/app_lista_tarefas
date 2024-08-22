@@ -18,7 +18,7 @@
 				//Criar um Form de edição
 				let form = document.createElement('form');
 				form.method = 'post';
-				form.action = '#';
+				form.action = 'tabela_controller.php?acao=atualizar';
 				form.className = 'row';
 
 				//Criar um Input para entrada do texto

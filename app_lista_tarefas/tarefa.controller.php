@@ -6,8 +6,6 @@ require 'conexao.php';
 //Busca do valor parâmetro passado pelo formulário de tarefa_controller.php
 $acao = isset($_GET['acao']) ? $_GET['acao'] : $acao;
 
-
-
 if($acao == 'inserir'){
   $tarefa = new tarefa();
   $tarefa->__set('tarefa',$_POST['tarefa']);
@@ -25,5 +23,7 @@ if($acao == 'inserir'){
 
   $tarefaService = new tarefaService($conexao, $tarefa);
   $tarefas = $tarefaService->recuperar();
+} else if($acao == 'att'){
+  echo 'Chegamos!';
 }
 
