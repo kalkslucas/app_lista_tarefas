@@ -23,7 +23,7 @@ if($acao == 'inserir'){
 
   $tarefaService = new tarefaService($conexao, $tarefa);
   $tarefas = $tarefaService->recuperar();
-} else if($acao == 'att'){
+} else if($acao == 'atualizar'){
   echo 'Chegamos!';
 }
 
